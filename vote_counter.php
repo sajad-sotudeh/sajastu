@@ -5,7 +5,8 @@ header('Content-Type: text/html; charset=utf-8');
 get_header();
 $post_id = $_GET['poll'];
 $vote = $_GET['vote'];
-$user_id = $_SERVER['REMOTE_ADDR'];
+$user_id = get_the_user_ip();
+
     if (user_check($user_id,$post_id)){
 			echo "<script>alert('You have already voted, So your vote is not registered. You can just see the Results');</script>";
 			global $wpdb;
