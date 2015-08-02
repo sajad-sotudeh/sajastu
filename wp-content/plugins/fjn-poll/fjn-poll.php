@@ -72,7 +72,7 @@ register_activation_hook(__FILE__, 'fjn_add_users_table_to_db');
 
 
 //******************************************
-// CPT - poll + field taxonomy
+// CPT - poll
 //******************************************
 function cpt_poll(){
 	$labels = array(
